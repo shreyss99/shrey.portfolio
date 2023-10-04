@@ -682,5 +682,5 @@ header .navbar {
 
 .bg-blue-900 {
   --tw-bg-opacity: 1;
-  background-color: var(--secondary-color);
+  background-color: rgb(37 101 249 / var(--tw-bg-opacity));
 }
