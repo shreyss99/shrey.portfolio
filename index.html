@@ -30,8 +30,44 @@
       <script defer src=/fontawesome-5/all-5.15.4.js></script>
       <script src="https://unpkg.com/@popperjs/core@2"></script>
       <title>Shrey Shah | Portfolio</title>
+
+      <style>
+        #return-to-top {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 50%;
+            padding: 10px 15px;
+            cursor: pointer;
+        }
+    </style>
+
    </head>
    <body class=light onload=loading()>
+
+      <button id="return-to-top" onclick="scrollToTop()">↑</button>
+
+       <!-- JavaScript for the button and any additional scripts -->
+       <script>
+           function scrollToTop() {
+               window.scrollTo({ top: 0, behavior: 'smooth' });
+           }
+
+           window.onscroll = function() {
+               if (document.documentElement.scrollTop > 100) {
+                   document.getElementById('return-to-top').style.display = 'block';
+               } else {
+                   document.getElementById('return-to-top').style.display = 'none';
+               }
+           };
+       </script>
+
+
+
       <script src=/bootstrap-5/js/bootstrap.bundle.js></script>
       <script>localStorage.getItem("pref-theme")==="dark"?document.body.classList.add('dark'):localStorage.getItem("pref-theme")==="light"?document.body.classList.remove('dark'):window.matchMedia('(prefers-color-scheme: dark)').matches&&document.body.classList.add('dark')</script>
       <header>
