@@ -50,9 +50,11 @@
    </head>
    <body class=light onload=loading()>
 
-      <button id="return-to-top" onclick="scrollToTop()">↑</button>
+      <button id="return-to-top" onclick="scrollToTop()">
+         <i class="fas fa-hand-point-up"></i>
+      </button>
 
-       <!-- JavaScript for the button and any additional scripts -->
+       <!-- Script for Return to Top feature -->
        <script>
            function scrollToTop() {
                window.scrollTo({ top: 0, behavior: 'smooth' });
